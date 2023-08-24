@@ -6,4 +6,4 @@
   - npm create vite@latest rick-and-morty -- --template react-ts
 
 
-# !!! Compatibility Note: Vite requires Node.js version 18+, 20+. 
+# Compatibility Note: Vite requires Node.js version 18+, 20+. 
