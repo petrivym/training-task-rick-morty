@@ -1,0 +1,30 @@
+$max-width: 1024px;
+$min-width: 312px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid{
+  &-container{
+    $flap: minmax(24px, 1fr);
+    $content: minmax($min-width, $max-width);
+
+    display: grid;
+    grid-template-columns: 
+      $flap
+      $content
+      $flap;
+  }
+
+  &-content {
+    grid-column: 2 / 3;
+  }
+}
+
+.placement-center {
+  align-self: center;
+  align-items: center;
+}

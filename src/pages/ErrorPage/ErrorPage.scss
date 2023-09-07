@@ -1,0 +1,19 @@
+@import "../../scss/vars.scss";
+
+.error{
+  &-container{
+  height: 100vh;
+  background-image:url("../../assets/img/errorRickAndMorti.png");
+  background-size: cover;
+  background-position: center;
+  grid-template-rows: 1fr 2fr 1fr;
+  color: $clr-white;
+}
+&-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap-lg;
+  grid-row: 2 / 3;
+  }
+}
